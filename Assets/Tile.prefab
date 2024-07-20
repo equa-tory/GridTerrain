@@ -210,11 +210,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3187263337869592112}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4cc1c1c4af4248438e2262f1683c0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tm: {fileID: 0}
   topFace: {fileID: 1355194052137200035}
   backFace: {fileID: 8573240504502110450}
   frontFace: {fileID: 4333145799015918818}

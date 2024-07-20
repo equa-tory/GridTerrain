@@ -16,8 +16,8 @@ public class TerrainManager : MonoBehaviour
         for(int x = 0; x < size.x; x++) {
             for(int y = 0; y < size.y; y++) {
 
-                Vector3 pos = grid.WorldToCell(new Vector3(x, 0, y));
-                var t = Instantiate(tile, new Vector3(x, 0, y), Quaternion.identity, grid.transform);
+                Vector3Int pos = grid.WorldToCell(new Vector3(x, 0, y));
+                var t = Instantiate(tile, grid.CellToWorld(pos), Quaternion.identity, grid.transform);
                 t.tm = this;
                 tiles.Add(t);
             }
